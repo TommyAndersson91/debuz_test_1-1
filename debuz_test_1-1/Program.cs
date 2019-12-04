@@ -61,8 +61,22 @@ namespace debuz_test_1_1
             {
                 Console.WriteLine("Please enter a number between 0-9 [Guess: " + (numberOfGuesses+1) + " /4]");
 
-                guessedNumbers[numberOfGuesses] = Int32.Parse(Console.ReadLine());
-                if (guessedNumbers[numberOfGuesses] > 9)
+               
+
+
+                int number;
+
+                bool success = Int32.TryParse(Console.ReadLine(), out number) ;
+                if (success)
+                {
+                    guessedNumbers[numberOfGuesses] = number;
+                } else
+                {
+                    Console.WriteLine("Just numericals, and without decimals");
+                    Guess();
+                }
+               
+                if (guessedNumbers[numberOfGuesses] > 9);
                 {
                     Console.WriteLine("Please dont enter a number higher than 9");
                     Guess();
