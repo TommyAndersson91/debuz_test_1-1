@@ -14,13 +14,7 @@ namespace debuz_test_1_1
 //Random numbers from 0 - 9 to 4 numbers uniquely.
 //Receive input from user from 0 - 9 to 4 numbers.
 //When all 4 inputs are received, display the guess result, which how many correct numbers and how many correct positions.
-//Can continuously receive inputs until both results (correct numbers, correct positions) are correct  (4, 4).
-
-
-//Please write the program that will find the floating point number of 22  7 at specific position.
-//For example, users input the position number such as 2 and the program should return 4 as answer.
-// ^ I dont understand. 22 / 7 is Pi 3.14, and what else? :)  
-  
+//Can continuously receive inputs until both results (correct numbers, correct positions) are correct  (4, 4).  
 
     class Program
     {
