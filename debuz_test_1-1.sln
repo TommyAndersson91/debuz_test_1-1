@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "debuz_test_1-1", "debuz_test_1-1\debuz_test_1-1.csproj", "{F3CEBF1A-EC57-44B6-B9C7-E1F133C015F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3CEBF1A-EC57-44B6-B9C7-E1F133C015F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CEBF1A-EC57-44B6-B9C7-E1F133C015F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CEBF1A-EC57-44B6-B9C7-E1F133C015F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CEBF1A-EC57-44B6-B9C7-E1F133C015F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
