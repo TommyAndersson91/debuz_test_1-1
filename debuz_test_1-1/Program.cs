@@ -62,8 +62,14 @@ namespace debuz_test_1_1
                 Console.WriteLine("Please enter a number between 0-9 [Guess: " + (numberOfGuesses+1) + " /4]");
 
                 guessedNumbers[numberOfGuesses] = Int32.Parse(Console.ReadLine());
+                if (guessedNumbers[numberOfGuesses] > 9)
+                {
+                    Console.WriteLine("Please dont enter a number higher than 9");
+                    Guess();
+                }
                 numberOfGuesses++;
             }
+           
             foreach (var guessedNumber in guessedNumbers)
             {
                 foreach (var randomNumber in randomNumbers)
