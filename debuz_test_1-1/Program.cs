@@ -27,16 +27,19 @@ namespace debuz_test_1_1
 
        static int[] randomNumbers = new int[4];
        static int[] guessedNumbers = new int[4];
-       static int numberOfGuesses = 0;
-       static int correctNumbers = 0;
-       static int correctPositions = 0;
+        static int numberOfGuesses;
+        static int correctNumbers;
+        static int correctPositions; 
 
         static void Main(string[] args)
         {
+            SetNumbers();
+            Guess();
+        }
 
 
-
-
+        public static void SetNumbers()
+        {
             var numbers = Enumerable.Range(0, 9).ToArray();
             var rnd = new Random();
 
@@ -47,24 +50,22 @@ namespace debuz_test_1_1
                 numbers[randomIndex] = numbers[i];
                 numbers[i] = temp;
             }
-           
+
             for (int i = 0; i < 4; ++i)
             {
                 randomNumbers[i] = numbers[i];
-            /*
-             * Uncomment to display the random unique numbers
-             Console.WriteLine(randomNumbers[i]);
-             */
+                
+                 // Uncomment to display the random unique numbers
+                 Console.WriteLine(randomNumbers[i]);
+                 
             }
-          
-            Guess();
-
         }
+
         public static void Guess()
         {
             while (numberOfGuesses < 4)
             {
-                Console.WriteLine("Please guess for a number between 0-9 [Guess: " + (numberOfGuesses+1) + " /4]");
+                Console.WriteLine("Please enter a number between 0-9 [Guess: " + (numberOfGuesses+1) + " /4]");
 
                 guessedNumbers[numberOfGuesses] = Int32.Parse(Console.ReadLine());
                 numberOfGuesses++;
@@ -89,6 +90,9 @@ namespace debuz_test_1_1
 
             if (correctPositions == 4 && correctNumbers == 4)
             {
+                Console.WriteLine
+                ("You guessed the correct number: " + correctNumbers + " / 4 times" + "\n"
+                + "You guessed the correct positions: " + correctPositions + " / 4 times");
                 Console.WriteLine("Congratulations you have won the game!");
              
             } else
